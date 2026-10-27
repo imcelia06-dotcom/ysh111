@@ -1,0 +1,515 @@
+@charset "UTF-8";
+/* Quiet purple App styling. Product behavior remains unchanged. */
+.phone,
+.modal,
+.toast,
+.prototype-only {
+  --app-bg: #fbfafc;
+  --app-paper: #ffffff;
+  --app-ink: #2a273a;
+  --app-muted: #6e657c;
+  --app-line: #e1e0e8;
+  --app-primary: #6654d9;
+  --app-soft: #ecebf2;
+  --app-lavender: #f0eef6;
+  --app-danger: #985b50;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.phone {
+  background: var(--app-bg);
+  border-color: #302d3e;
+  box-shadow: 0 28px 65px #28253c20, inset 0 0 0 1px #ffffff70;
+  color: var(--app-ink);
+}
+.phone .island,
+.phone .home-indicator { background: #282537; }
+.phone .phone-status { color: #363441; }
+.phone #phone-app { background: var(--app-bg); }
+.phone .phone-head { padding: 15px 19px 17px; }
+.phone .phone-title { gap: 8px; align-items: center; }
+.phone .phone-title h3 {
+  color: var(--app-ink);
+  font-size: 20px;
+  line-height: 1.45;
+  font-weight: 650;
+  letter-spacing: -.7px;
+}
+.phone .phone-title button {
+  min-height: 31px;
+  margin-left: 0;
+  padding: 5px 11px;
+  border: 1px solid #dbd9e5;
+  border-radius: 20px;
+  background: #eeedf4;
+  color: var(--app-primary);
+  font-size: 10px;
+  font-weight: 550;
+  white-space: nowrap;
+}
+.phone .phone-head > p { color: var(--app-muted); font-size: 10px; line-height: 1.75; margin-top: 6px; }
+.phone .app-scroll { padding: 0 17px 20px; scrollbar-color: #cac8d4 transparent; scrollbar-width: thin; }
+.phone .app-scroll::-webkit-scrollbar { width: 4px; }
+.phone .app-scroll::-webkit-scrollbar-thumb { background: #d5d3de; border-radius: 4px; }
+.phone .app-bottom {
+  border-top: 1px solid var(--app-line);
+  padding: 10px 14px 9px;
+  background: #fbfafcf5;
+  box-shadow: 0 -6px 18px #39354f04;
+}
+.phone .app-tabs { gap: 4px; align-items: center; padding-top: 5px; }
+.phone .app-tabs button {
+  min-height: 36px;
+  border-radius: 9px;
+  color: #696870;
+  font-size: 10px;
+  line-height: 1.4;
+  font-weight: 450;
+  transition: background .16s ease, color .16s ease;
+}
+.phone .app-tabs button.current { background: #ebe9f3; color: var(--app-primary); font-weight: 650; }
+.phone .app-tabs button:hover { background: #edecf3; color: var(--app-primary); }
+.phone .app-bottom > small { color: var(--app-muted); font-size: 9px; }
+.phone .app-btn,
+.modal .app-btn {
+  min-height: 37px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: var(--app-primary);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 550;
+  line-height: 1.55;
+  transition: background .16s ease, border-color .16s ease, box-shadow .16s ease;
+}
+.phone .app-btn:not(:disabled):hover,
+.modal .app-btn:not(:disabled):hover { background: #5542c3; }
+.phone .app-btn.secondary,
+.modal .app-btn.secondary { border-color: #dddbe6; background: #edecf3; color: #4d4961; }
+.phone .app-btn.secondary:not(:disabled):hover,
+.modal .app-btn.secondary:not(:disabled):hover { background: #e5e3ee; border-color: #d1cedf; }
+.phone .app-btn.danger,
+.modal .app-btn.danger { border-color: #f0ded8; background: #f7eeeb; color: var(--app-danger); }
+.phone .app-btn.danger:not(:disabled):hover,
+.modal .app-btn.danger:not(:disabled):hover { background: #f1e2dc; }
+.phone button:disabled,
+.modal button:disabled { opacity: .44; box-shadow: none; }
+.phone .app-undo,
+.modal .app-undo { color: #656273; line-height: 1.7; }
+.phone .welcome-panel { padding: 24px 1px 12px; }
+.phone .welcome-symbol {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 25px;
+  border: 1px solid #dbd9e8;
+  border-radius: 22px;
+  background: #e4e2ef;
+  color: #4b4666;
+  font-size: 42px;
+  box-shadow: inset 0 1px 0 #ffffffb8;
+}
+.phone .welcome-panel h3 { font-size: 26px; line-height: 1.5; font-weight: 600; color: #312e42; letter-spacing: -.8px; }
+.phone .welcome-panel p { color: #696871; font-size: 11px; line-height: 1.9; margin-bottom: 27px; }
+.phone .welcome-panel .app-btn { min-height: 43px; border-radius: 11px; font-size: 11px; }
+.phone .welcome-panel small { color: #696870; font-size: 9px; line-height: 1.9; margin: 22px 3px 0; }
+.phone .find-summary { padding: 6px 0 20px; }
+.phone .find-summary strong { color: #342f51; font-size: 31px; font-weight: 550; letter-spacing: -1px; }
+.phone .find-summary span { color: var(--app-muted); line-height: 1.7; }
+.phone .find-summary button,
+.phone .list-controls > button { color: #5c5870; font-size: 10px; min-height: 30px; }
+.phone .category-toolbar { color: #636171; margin: 2px 0 11px; }
+.phone .category-toolbar button { color: #514d69; min-height: 31px; }
+.phone .category-grid { gap: 10px; }
+.phone .category-tile {
+  min-width: 0;
+  min-height: 105px;
+  padding: 14px;
+  border-radius: 14px;
+  border-color: #dad8e7;
+  background: #eceaf4;
+  box-shadow: 0 2px 3px #312c4e02;
+  transition: border-color .16s ease, background .16s ease, transform .16s ease;
+}
+.phone .category-tile:hover { transform: translateY(-1px); border-color: #b2aec9; box-shadow: 0 4px 12px #39335a10; }
+.phone .category-tile .category-icon { color: #5a5575; font-size: 25px; margin-bottom: 13px; }
+.phone .category-tile strong { color: #423e58; font-weight: 550; font-size: 13px; padding-right: 0; }
+.phone .category-tile small { color: #646272; font-size: 9px; right: 13px; top: 13px; }
+.phone .category-tile.custom { background: #f0eff6; border-color: #e1ddeb; }
+.phone .category-tile.custom .category-icon { color: #746b85; }
+.phone .category-tile.custom strong { color: #675c78; }
+.phone .category-tile.custom small { color: #716b7a; }
+.phone .category-tile.unknown { background: #f0eff3; border-color: #dedde7; }
+.phone .category-tile.unknown .category-icon { color: #646172; }
+.phone .category-tile.nails { background: #fbf1f2; border-color: #eddfdf; }
+.phone .category-tile.nails .category-icon { color: #89656d; }
+.phone .category-tile.nails strong { color: #896770; }
+.phone .category-tile.chat,
+.phone .category-tile.receipt { background: #eceaf4; border-color: #d9d7e7; }
+.phone .category-tile.outfit { background: #f6f1e9; border-color: #e9e2d7; }
+.phone .category-tile.food { background: #f8f4e7; border-color: #ede5d3; }
+.phone .category-footnote { color: #67666f; font-size: 9px; line-height: 1.85; }
+.phone .home-note { background: #edecf3; border: 1px solid #e0dee9; border-radius: 11px; padding: 13px 14px; }
+.phone .home-note b { color: #5e5b71; font-size: 10px; }
+.phone .home-note p { color: #615f6f; font-size: 9px; }
+.phone .review-banner { border-color: #d8d5e7; background: #eae8f4; color: #484268; padding: 13px 14px; border-radius: 12px; }
+.phone .review-banner strong { font-weight: 600; line-height: 1.7; }
+.phone .review-banner span { color: #605c75; line-height: 1.7; }
+.phone .review-intro { border: 1px solid #dedce8; background: #ecebf4; border-radius: 11px; padding: 12px 13px; }
+.phone .review-intro strong { color: #4c4769; font-size: 11px; }
+.phone .review-intro p { color: #625f71; line-height: 1.85; }
+.phone .review-filters { gap: 5px; margin: 14px 0 12px; }
+.phone .review-filters button { border: 1px solid #e2e1e9; background: #f1f0f5; color: #666471; padding: 6px 8px; font-size: 9px; line-height: 1.5; }
+.phone .review-filters button.current { border-color: #6654d9; background: #6654d9; color: #fff; }
+.phone .selection-row { align-items: center; gap: 6px; color: #636170; margin: 11px 0; font-size: 9px; }
+.phone .selection-row > span { min-width: 0; }
+.phone .selection-row button { color: #575276; min-height: 28px; font-size: 9px; }
+.phone .screenshot-grid { gap: 10px; }
+.phone .screenshot-card { min-width: 0; border: 1px solid #dedce7; border-radius: 12px; background: var(--app-paper); box-shadow: 0 2px 5px #312c4f03; }
+.phone .screenshot-card.picked { border-color: #9984df; background: #f4f3fa; box-shadow: 0 0 0 1px #9984df; }
+.phone .shot-art.image-shot { background: #eeedf2; }
+.phone .card-label { color: #403d51; padding: 9px 9px 1px; min-height: 39px; font-size: 10px; line-height: 1.65; }
+.phone .suggestion-hint { padding: 6px 8px; margin: 5px 7px; border: 1px solid #f0e8d9; border-radius: 6px; background: #f9f5ec; color: #7e6e4f; font-size: 9px; line-height: 1.65; }
+.phone .card-tags { padding: 4px 8px; gap: 4px; }
+.phone .card-tags span { background: #eceaf4; color: #605d71; border-radius: 4px; padding: 2px 5px; font-size: 8px; }
+.phone .card-footer { padding: 1px 8px 7px; }
+.phone .card-footer span { color: #676571; }
+.phone .card-footer button { color: #565174; font-size: 9px; min-height: 29px; }
+.phone .review-choice { width: 27px; height: 27px; border: 1px solid #c0bdd3; border-radius: 50%; background: #ffffffed; box-shadow: 0 1px 4px #342d5916; color: white; font-size: 13px; }
+.phone .picked .review-choice,
+.phone .picked .card-check { background: #6654d9; border-color: #6654d9; color: #fff; }
+.phone .card-check { width: 23px; height: 23px; border-color: #c0bdd3; box-shadow: 0 1px 4px #342d5913; }
+.phone .list-controls { gap: 6px; }
+.phone .category-switch { color: #646271; }
+.phone .category-switch select { border-color: #d9d7e6; background: #f6f5fa; color: #555073; border-radius: 7px; min-height: 32px; }
+.phone .library-search { border-color: #dad8e6; background: #fff; color: #524e68; min-height: 38px; border-radius: 10px; padding: 9px 11px; box-shadow: inset 0 1px 2px #332d5603; }
+.phone .library-search::placeholder { color: #65636f; }
+.phone .facet-box { background: #eeedf5; border: 1px solid #dedcea; border-radius: 11px; padding: 9px; }
+.phone .facet-row > span { color: #615e71; }
+.phone .facet-row button { background: #fff; color: #5b5771; border: 1px solid #dfddeb; }
+.phone .facet-row button.current { background: #6654d9; border-color: #6654d9; color: white; }
+.phone .clean-explainer { background: #ecebf4; color: #5f5c72; border: 1px solid #dddbea; border-radius: 10px; }
+.phone .library-empty { padding: 33px 8px; }
+.phone .empty-symbol { color: #5f5c71; }
+.phone .library-empty h3 { color: #555070; font-weight: 550; font-size: 16px; }
+.phone .library-empty p { color: #626070; }
+.phone .library-empty button { color: #524b78; }
+.phone .phone-actions .app-btn { padding: 10px 6px; font-size: 10px; }
+.prototype-only { background: #f4f2f8; }
+.prototype-only .standalone-head { padding: 18px 22px 14px; }
+.prototype-only .standalone-head > a { color: #413c60; font-size: 19px; letter-spacing: -.5px; }
+.prototype-only .standalone-head small { color: #636071; letter-spacing: 0; font-size: 10px; }
+.prototype-only .standalone-head .reset-btn { color: #5f5b74; border-color: #cbc8dc; border-radius: 0; min-height: 30px; }
+.prototype-only .phone { background: var(--app-bg); border: 1px solid #dad8e7; border-radius: 24px; box-shadow: 0 16px 55px #332c5c0c; }
+.prototype-only .phone-head { padding: 22px 21px 18px; }
+.prototype-only .phone-title h3 { font-size: 23px; }
+.prototype-only .phone-title button { min-height: 35px; font-size: 11px; }
+.prototype-only .phone-head > p { font-size: 11px; }
+.prototype-only .app-scroll { padding: 0 21px 22px; }
+.prototype-only .app-bottom { padding: 11px 16px 12px; }
+.prototype-only .app-tabs button { min-height: 40px; font-size: 11px; border-radius: 10px; }
+.prototype-only .welcome-panel { padding: 35px 3px 16px; }
+.prototype-only .welcome-panel h3 { font-size: 29px; }
+.prototype-only .welcome-panel p { font-size: 12px; }
+.prototype-only .welcome-panel .app-btn { font-size: 12px; min-height: 47px; }
+.prototype-only .welcome-panel small { font-size: 10px; }
+.prototype-only .category-tile { min-height: 114px; padding: 15px; }
+.prototype-only .category-tile strong { font-size: 14px; }
+.prototype-only .category-tile small { font-size: 10px; }
+.prototype-only .category-icon { font-size: 28px; }
+.prototype-only .library-search { min-height: 41px; font-size: 11px; }
+.prototype-only .card-label { font-size: 12px; }
+.prototype-only .card-tags span { font-size: 9px; }
+.prototype-only .card-footer button { font-size: 10px; min-height: 32px; }
+.prototype-only .suggestion-hint { font-size: 10px; }
+.prototype-only .review-intro strong { font-size: 12px; }
+.prototype-only .review-intro p { font-size: 10px; }
+.prototype-only .review-filters button { font-size: 10px; padding: 7px 10px; }
+.prototype-only .selection-row,
+.prototype-only .selection-row button { font-size: 10px; }
+.prototype-only .standalone-caption { color: #625f71; margin-top: 11px; font-size: 9px; line-height: 1.8; }
+.modal { z-index: 80; padding: 22px; }
+.modal .modal-backdrop { background: #1a172b6b; backdrop-filter: blur(7px); }
+.modal .dialog { background: var(--app-bg); border: 1px solid #e8e6f0; border-radius: 22px; padding: 28px; width: 462px; color: var(--app-ink); box-shadow: 0 25px 90px #1c163b33; scrollbar-color: #c6c3d9 transparent; }
+.modal .dialog-close { top: 13px; right: 13px; border-radius: 50%; color: #636071; background: #ebe9f4; line-height: 1; font-weight: 350; }
+.modal .dialog-close:hover { background: #dfdded; color: #514b74; }
+.modal .dialog .eyebrow { color: #5d5971; font-size: 9px; letter-spacing: 1.2px; padding-right: 26px; }
+.modal .dialog h3 { color: #373156; font-size: 21px; line-height: 1.6; letter-spacing: -.5px; font-weight: 600; margin: 8px 0 12px; padding-right: 15px; }
+.modal .dialog p { color: #5f5b74; font-size: 12px; line-height: 1.9; }
+.modal .dialog small { color: #605d71; line-height: 1.8; }
+.modal .dialog label { color: #5c5872; line-height: 1.7; }
+.modal .dialog select,
+.modal .dialog input:not([type="checkbox"]) { border-color: #d5d2e6; color: #504a74; border-radius: 8px; background: white; }
+.modal .dialog input::placeholder { color: #646271; }
+.modal .dialog .category-name-input { padding: 12px; line-height: 1.7; }
+.modal .dialog .category-checks { gap: 9px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.modal .dialog .category-checks label { color: #554f75; font-size: 11px; }
+.modal .category-checks legend { color: #5d5a71; }
+.modal .category-checks input { width: 15px; height: 15px; margin: 0 2px 0 0; accent-color: #6654d9; }
+.modal .dialog .form-error { color: #986252; font-size: 11px; }
+.modal .dialog-warning { background: #faf2e8; border: 1px solid #f0e3d1; color: #7c6c55; line-height: 1.85; border-radius: 10px; }
+.modal .dialog-warning.neutral { background: #ebe9f4; border-color: #dad7e9; color: #585472; }
+.modal .dialog-actions { gap: 9px; }
+.modal .dialog-actions button { min-width: 0; overflow-wrap: anywhere; }
+.modal .review-explanation { color: #565172; }
+.modal .review-image { border-color: #d8d5e8; border-radius: 12px; background: #efeef6; }
+.modal .review-zoom,
+.modal .zoom-tools button { color: #534d75; background: #e8e6f3; border-radius: 7px; min-height: 31px; }
+.modal .review-meta-summary { background: #ecebf5; border: 1px solid #dfdced; color: #5c5874; border-radius: 9px; padding: 10px 12px; }
+.modal .review-meta-summary strong { color: #524c74; }
+.modal .review-editor,
+.modal .tag-editor { border-color: #dad7ea; }
+.modal .review-editor summary,
+.modal .tag-editor summary { color: #524c77; min-height: 27px; line-height: 1.8; font-weight: 500; }
+.modal .inline-category-create { border-color: #dedcec; }
+.modal .inline-category-create input { min-height: 36px; }
+.modal .inline-category-create .app-btn { padding: 8px 10px; font-size: 10px; }
+.modal .metadata-fields { gap: 12px; margin: 14px 0 16px; }
+.modal .metadata-fields label { margin: 0; }
+.modal .metadata-fields input { min-height: 37px; padding: 9px; }
+.modal .review-decision { bottom: -28px; border-color: #dad7ea; background: #fbfafcfa; padding: 13px 0 2px; box-shadow: 0 -8px 13px #fbfafc; }
+.modal .review-secondary button { color: #585372; min-height: 33px; padding: 6px 2px; font-size: 11px; }
+.modal .bulk-review-list,
+.modal .bulk-review-row { border-color: #dbd8ea; }
+.modal .bulk-review-row { gap: 14px; padding: 14px 0; }
+.modal .bulk-review-row strong { color: #4f4974; }
+.modal .bulk-review-row span { color: #585372; }
+.modal .detail-tags span { background: #e8e6f4; color: #514a76; border-radius: 6px; padding: 4px 8px; }
+.modal .detail-review-notice { background: #f1eef7; color: #766986; border: 1px solid #e6dff0; border-radius: 10px; }
+.modal .detail-review-notice button { color: #77668a; }
+.modal .image-viewport { border-color: #d8d5e8; background: #ecebf5; border-radius: 12px; }
+.modal .zoom-tools span { color: #5d5971; }
+.modal .detail-delete { color: #87675c; min-height: 32px; }
+.modal .category-manager-row { border-color: #dcd9ea; }
+.modal .category-manager-row strong { color: #524b77; }
+.modal .category-row-actions button { background: #e8e6f3; color: #554f76; border-radius: 7px; min-height: 31px; }
+.modal .system-category { color: #636072; }
+.toast { left: 50%; background: #322e49; border: 1px solid #4b4667; border-radius: 12px; color: #f0eff8; font-size: 12px; line-height: 1.8; max-width: min(420px, calc(100vw - 36px)); box-shadow: 0 8px 30px #201c3922; }
+.phone button:focus-visible,
+.phone input:focus-visible,
+.phone select:focus-visible,
+.modal button:focus-visible,
+.modal input:focus-visible,
+.modal select:focus-visible,
+.modal summary:focus-visible,
+.prototype-only .standalone-head a:focus-visible,
+.prototype-only .standalone-head button:focus-visible { outline: 3px solid #a491ef; outline-offset: 3px; }
+@media (max-width: 640px) {
+  .modal { padding: 17px; }
+  .modal .dialog { padding: 24px 21px; border-radius: 19px; max-height: 91dvh; }
+  .modal .dialog h3 { font-size: 20px; }
+  .modal .review-decision { bottom: -24px; }
+  .modal .metadata-fields { grid-template-columns: 1fr; gap: 11px; }
+}
+@media (max-width: 480px) {
+  .prototype-only .standalone-head { padding: 14px 17px 12px; }
+  .prototype-only .standalone-head small { font-size: 9px; margin-left: 5px; }
+  .prototype-only .phone { border-radius: 19px; }
+  .prototype-only .phone-head { padding: 19px 17px 16px; }
+  .prototype-only .phone-title h3 { font-size: 21px; }
+  .prototype-only .app-scroll { padding: 0 16px 19px; }
+  .prototype-only .app-bottom { padding: 9px 12px 11px; }
+  .prototype-only .welcome-panel { padding-top: 28px; }
+  .prototype-only .welcome-panel h3 { font-size: 27px; }
+  .prototype-only .welcome-panel p { font-size: 11px; }
+  .prototype-only .category-tile { min-height: 106px; padding: 13px; }
+  .prototype-only .category-tile strong { font-size: 13px; }
+  .prototype-only .review-filters button { padding: 7px 8px; font-size: 10px; }
+  .prototype-only .standalone-caption { font-size: 8px; padding: 0 19px; }
+  .modal .category-manager-row .category-row-actions { max-width: 124px; }
+}
+@media (max-width: 360px) {
+  .phone .phone-title h3 { font-size: 18px; }
+  .prototype-only .phone-title h3 { font-size: 20px; }
+  .prototype-only .standalone-head small { font-size: 8px; }
+  .phone .review-filters { gap: 4px; }
+  .prototype-only .review-filters button { font-size: 9px; padding: 7px; }
+  .phone .app-tabs button,
+  .prototype-only .app-tabs button { font-size: 10px; padding-left: 2px; padding-right: 2px; }
+  .phone .selection-row,
+  .phone .selection-row button { font-size: 9px; }
+  .modal { padding: 12px; }
+  .modal .dialog { padding: 23px 17px; }
+  .modal .review-decision { bottom: -23px; }
+  .modal .review-secondary { gap: 6px; }
+  .modal .review-secondary button { font-size: 10px; }
+}
+.prototype-only .standalone-head > a { display: inline-flex; align-items: center; gap: 7px; }
+.prototype-only .standalone-head img { flex-shrink: 0; }
+.phone .app-tabs button { min-height: 40px; }
+.phone .app-btn, .modal .app-btn { min-height: 42px; }
+.phone .card-footer button { min-height: 34px; }
+@media (max-width: 640px) {
+  .phone .library-search,
+  .modal input:not([type="checkbox"]),
+  .modal select { font-size: 16px; }
+  .prototype-only .phone-head > p { font-size: 12px; }
+  .prototype-only .review-intro strong { font-size: 13px; }
+  .prototype-only .review-intro p { font-size: 11px; }
+  .prototype-only .review-filters button { font-size: 11px; }
+  .prototype-only .welcome-panel .app-btn { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .phone *, .phone *::before, .phone *::after,
+  .modal *, .modal *::before, .modal *::after,
+  .toast { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* Mobile refinement: the tool keeps its own scroll area and comfortable targets. */
+@media (max-width: 640px) {
+  .prototype-only {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: #f5f3f9;
+  }
+  .prototype-only .standalone-head {
+    min-height: 62px;
+    padding: calc(12px + env(safe-area-inset-top, 0px)) max(18px, env(safe-area-inset-right, 0px)) 10px max(18px, env(safe-area-inset-left, 0px));
+    gap: 12px;
+  }
+  .prototype-only .standalone-head > a { min-width: 0; gap: 8px; }
+  .prototype-only .standalone-head img { width: 29px; height: 29px; }
+  .prototype-only .standalone-head small { margin-left: 2px; font-size: 10px; line-height: 1.5; }
+  .prototype-only .standalone-head .reset-btn {
+    flex-shrink: 0;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 1px solid #dfdbea;
+    border-radius: 14px;
+    font-size: 11px;
+    background: #faf9fc;
+  }
+  .prototype-only main.standalone-main { padding: 0 12px; }
+  .prototype-only .phone {
+    height: calc(100dvh - 132px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+    min-height: 0;
+    border-color: #e2ddec;
+    border-radius: 23px;
+    box-shadow: 0 10px 30px #4d3d7609, 0 1px 2px #4d3d7605;
+  }
+  .prototype-only .phone-head { padding: 17px 17px 13px; }
+  .prototype-only .phone-title h3 { font-size: 22px; letter-spacing: -.65px; }
+  .prototype-only .phone-title button { min-height: 44px; padding: 7px 12px; font-size: 11px; }
+  .prototype-only .phone-head > p { font-size: 11px; line-height: 1.8; margin: 4px 0 0; }
+  .prototype-only .app-scroll {
+    padding: 0 16px 18px;
+    scroll-padding-bottom: 18px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .prototype-only .app-bottom {
+    padding: 9px 10px 10px;
+    border-top-color: #e7e3ed;
+    background: #fbfafcf5;
+    box-shadow: 0 -4px 15px #49336b04;
+  }
+  .prototype-only .app-tabs { gap: 5px; padding-top: 4px; }
+  .prototype-only .app-tabs button { min-height: 44px; border-radius: 13px; font-size: 11px; }
+  .prototype-only .app-tabs button.current { background: #eee9fb; color: #6654d9; }
+  .prototype-only .app-btn { min-height: 44px; border-radius: 12px; font-size: 12px; }
+  .prototype-only .welcome-panel { padding: clamp(16px, 4dvh, 30px) 0 12px; }
+  .prototype-only .welcome-symbol { width: 64px; height: 64px; margin: 0 auto 20px; border-radius: 21px; }
+  .prototype-only .welcome-panel h3 { font-size: 27px; margin-bottom: 14px; }
+  .prototype-only .welcome-panel p { font-size: 12px; line-height: 1.9; margin-bottom: 22px; }
+  .prototype-only .welcome-panel .app-btn { min-height: 46px; margin: 9px 0; }
+  .prototype-only .welcome-panel small { font-size: 10px; line-height: 1.85; margin-top: 18px; }
+  .prototype-only .standalone-caption {
+    margin: 10px auto 0;
+    padding: 0 22px;
+    font-size: 10px;
+    line-height: 1.7;
+    color: #776b87;
+  }
+  .prototype-only .find-summary { padding-bottom: 16px; }
+  .prototype-only .find-summary strong { font-size: 30px; }
+  .prototype-only .category-tile { min-height: 108px; padding: 14px; border-radius: 16px; }
+  .prototype-only .category-tile strong { font-size: 14px; line-height: 1.6; }
+  .prototype-only .category-toolbar button { min-height: 40px; padding: 6px 4px; }
+  .prototype-only .screenshot-grid { gap: 11px; }
+  .prototype-only .screenshot-card { border-radius: 15px; border-color: #e4dfec; box-shadow: 0 2px 5px #3c2c5e04; }
+  .prototype-only .shot-art.image-shot { height: clamp(148px, 44vw, 182px); }
+  .prototype-only .card-label { font-size: 12px; line-height: 1.65; padding: 10px 9px 1px; }
+  .prototype-only .suggestion-hint { border-radius: 8px; margin: 5px 8px; font-size: 10px; }
+  .prototype-only .card-tags { padding: 5px 8px; }
+  .prototype-only .card-footer { padding: 1px 8px 7px; align-items: center; gap: 6px; }
+  .prototype-only .card-footer button { min-height: 40px; font-size: 11px; }
+  .phone .review-choice {
+    top: 1px; right: 1px; width: 44px; height: 44px;
+    border: 0; background: transparent; box-shadow: none;
+    isolation: isolate; display: grid; place-items: center; font-size: 14px;
+  }
+  .phone .review-choice::before {
+    content: ""; position: absolute; inset: 6px; z-index: -1;
+    border: 1px solid #c9c1dc; border-radius: 50%;
+    background: #fffffff0; box-shadow: 0 1px 4px #48316c12;
+  }
+  .phone .picked .review-choice { border: 0; background: transparent; }
+  .phone .picked .review-choice::before { background: #6654d9; border-color: #6654d9; }
+  .prototype-only .review-filters { gap: 5px; margin: 12px 0; }
+  .prototype-only .review-filters button { min-height: 36px; padding: 7px 9px; font-size: 11px; }
+  .prototype-only .selection-row { margin: 9px 0; font-size: 10px; gap: 8px; }
+  .prototype-only .selection-row button { min-height: 36px; font-size: 10px; }
+  .prototype-only .library-search { min-height: 44px; border-radius: 12px; font-size: 16px; }
+  .prototype-only .facet-row button { min-height: 32px; padding: 5px 9px; }
+  .prototype-only .category-switch select { min-height: 40px; border-radius: 9px; }
+  .modal {
+    padding: max(12px, env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px)) max(12px, env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
+  }
+  .modal .dialog {
+    width: min(100%, 462px);
+    max-width: 100%;
+    max-height: calc(100dvh - max(12px, env(safe-area-inset-top, 0px)) - max(12px, env(safe-area-inset-bottom, 0px)));
+    padding: 22px 18px;
+    border-radius: 24px;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  .modal .dialog-close { width: 44px; height: 44px; top: 8px; right: 8px; font-size: 24px; background: #f0edf7; }
+  .modal .dialog .eyebrow { padding-right: 36px; }
+  .modal .dialog h3 { padding-right: 32px; font-size: 21px; margin: 8px 0 12px; }
+  .modal .dialog p { font-size: 12px; }
+  .modal .dialog .review-image { max-height: min(30dvh, 240px); border-radius: 14px; }
+  .modal .dialog .review-image.expanded { max-height: min(48dvh, 360px); }
+  .modal .review-zoom, .modal .zoom-tools button { min-height: 40px; padding: 7px 11px; font-size: 11px; }
+  .modal .review-meta-summary { margin: 12px 0; line-height: 1.9; border-radius: 11px; }
+  .modal .review-editor summary, .modal .tag-editor summary { min-height: 40px; padding: 7px 0; font-size: 12px; }
+  .modal .dialog .category-checks { gap: 8px; }
+  .modal .dialog .category-checks label {
+    min-width: 0; min-height: 44px; padding: 9px;
+    border: 1px solid #e2dced; border-radius: 10px;
+    background: #fff; font-size: 12px; gap: 7px;
+  }
+  .modal .dialog .category-checks label:has(input:checked) { border-color: #c5b8f0; background: #f1edfc; color: #5f4dc0; }
+  .modal .dialog .category-checks input { width: 17px; height: 17px; margin: 0; }
+  .modal .dialog .metadata-fields label { font-size: 12px; }
+  .modal .dialog input:not([type="checkbox"]), .modal .dialog select { min-height: 44px; font-size: 16px; border-radius: 10px; }
+  .modal .metadata-fields { gap: 13px; margin: 15px 0 18px; }
+  .modal .inline-category-create > div { gap: 8px; }
+  .modal .inline-category-create .app-btn { min-height: 44px; font-size: 11px; }
+  .modal .app-btn { min-height: 44px; border-radius: 12px; font-size: 12px; }
+  .modal .dialog-actions { gap: 9px; }
+  .modal .review-decision {
+    bottom: -22px; margin-left: -18px; margin-right: -18px;
+    padding: 12px 18px 10px; border-top-color: #e5deef;
+    background: #fbfafcfa; backdrop-filter: blur(12px);
+  }
+  .modal .review-secondary { gap: 8px; padding-top: 3px; }
+  .modal .review-secondary button { min-height: 44px; padding: 7px 0; font-size: 11px; }
+  .modal .category-manager-row .category-row-actions { max-width: 142px; gap: 5px; }
+  .modal .category-row-actions button { min-height: 40px; padding: 7px; font-size: 11px; }
+  .toast { bottom: calc(18px + env(safe-area-inset-bottom, 0px)); font-size: 11px; border-radius: 13px; }
+}
+@media (max-width: 360px) {
+  .prototype-only .standalone-head small { font-size: 9px; }
+  .prototype-only .phone-title h3 { font-size: 20px; }
+  .prototype-only .phone-head { padding: 15px 15px 12px; }
+  .prototype-only .app-scroll { padding-left: 14px; padding-right: 14px; }
+  .prototype-only .app-tabs button { font-size: 10px; padding-left: 2px; padding-right: 2px; }
+  .prototype-only .review-filters button { padding-left: 8px; padding-right: 8px; font-size: 10px; }
+  .prototype-only .welcome-panel h3 { font-size: 25px; }
+  .modal .dialog h3 { font-size: 19px; }
+  .modal .dialog .category-checks label { font-size: 11px; padding: 8px; gap: 6px; }
+}
+@media (max-width: 640px) and (max-height: 700px) {
+  .prototype-only .welcome-panel { padding-top: 12px; }
+  .prototype-only .welcome-symbol { width: 56px; height: 56px; margin-bottom: 16px; font-size: 36px; }
+  .prototype-only .welcome-panel h3 { font-size: 25px; margin-bottom: 12px; }
+  .modal .dialog .review-image { max-height: 27dvh; }
+}
