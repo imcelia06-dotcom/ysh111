@@ -330,7 +330,7 @@ const requirements=[
 ];
 function renderReq(filter='all'){const target=document.getElementById('req-list');if(!target)return;target.innerHTML=requirements.filter(r=>filter==='all'||r.priority===filter).map(r=>'<details><summary><span class="req-id">'+r.id+'</span><span class="req-title">'+r.title+'</span><span class="priority '+(r.priority==='P1'?'p1':'')+'">'+r.priority+'</span><span class="req-summary">'+r.summary+'</span><span class="req-toggle" aria-hidden="true">+</span></summary><div class="req-description"><p>'+r.description+'</p><strong>验收要点</strong><p>'+r.accept+'</p></div></details>').join('');}
 document.querySelectorAll('[data-req]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-req]').forEach(x=>{const on=x===b;x.classList.toggle('selected',on);x.setAttribute('aria-pressed',String(on));});renderReq(b.dataset.req);}));
-const sections=[...document.querySelectorAll('section[id]')],navLinks=[...document.querySelectorAll('nav a')];
+const sections=[...document.querySelectorAll('main > section[id]')],navLinks=[...document.querySelectorAll('nav a')];
 const mobileMenu=document.querySelector('.mobile-menu');
 if(mobileMenu){
  mobileMenu.addEventListener('click',e=>{if(e.target.closest('a[href^="#"]'))mobileMenu.open=false;});

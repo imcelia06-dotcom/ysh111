@@ -4,94 +4,108 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f7f6fa">
-<meta name="description" content="拾序，一个截图找回与整理的产品设计探索。先看建议，由你确认，再按自己的习惯找到想用的截图。">
-<title>拾序 · 把存过的，重新用起来</title>
+<meta name="description" content="拾序，截图整理与找回的概念原型。自定义分类、按关键词查找，归类与清理由你确认。">
+<title>拾序 · 存过的截图，需要时找得到</title>
 <link rel="icon" type="image/svg+xml" href="assets/mark.svg?v=20261027-purple">
 <link rel="stylesheet" href="styles.css?v=20261026-visual">
-<link rel="stylesheet" href="showcase.css?v=20261027-mobile-2">
+<link rel="stylesheet" href="showcase.css?v=20261030-focus-final-2">
 <link rel="stylesheet" href="app-polish.css?v=20261027-mobile-final-2">
-<script src="app.js?v=20261027-mobile" defer></script>
+<script src="app.js?v=20261030-focus" defer></script>
 </head>
 <body class="showcase">
 <a class="skip" href="#main">跳至正文</a>
 <header class="site-header">
- <a href="#overview" class="site-brand" aria-label="拾序，返回概览"><img src="assets/mark.svg?v=20261027-purple" width="36" height="36" alt=""><span>拾序<small>SHIXU / DESIGN EXPLORATION</small></span></a>
- <nav class="site-nav" aria-label="项目导航"><a href="#overview" class="active">概览</a><a href="#people">设计思路</a><a href="#journey">使用流程</a><a href="#prototype">交互原型</a><a href="#requirements">需求说明</a><a href="#validation">下一步</a></nav>
+ <a href="#overview" class="site-brand" aria-label="拾序，返回首页"><img src="assets/mark.svg?v=20261027-purple" width="34" height="34" alt=""><span>拾序<small>让截图重新有用</small></span></a>
+ <nav class="site-nav" aria-label="页面导航"><a href="#people">产品优势</a><a href="#journey">使用场景</a><a href="#prototype">体验原型</a><a href="#requirements">了解更多</a></nav>
  <a class="site-header-cta" href="原型.html">打开原型 <span aria-hidden="true">↗</span></a>
- <details class="mobile-menu"><summary><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span>目录</span></summary><nav class="mobile-nav" aria-label="手机页面导航"><a href="#overview"><span>01</span>产品概览<i aria-hidden="true">↗</i></a><a href="#people"><span>02</span>设计思路<i aria-hidden="true">↗</i></a><a href="#journey"><span>03</span>使用流程<i aria-hidden="true">↗</i></a><a href="#prototype"><span>04</span>体验原型<i aria-hidden="true">↗</i></a><a href="#requirements"><span>05</span>需求说明<i aria-hidden="true">↗</i></a><a href="#validation"><span>06</span>下一步计划<i aria-hidden="true">↗</i></a></nav></details>
+ <details class="mobile-menu"><summary><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span>目录</span></summary><nav class="mobile-nav" aria-label="手机页面导航"><a href="#people"><span>01</span>产品优势<i aria-hidden="true">↗</i></a><a href="#journey"><span>02</span>使用场景<i aria-hidden="true">↗</i></a><a href="#prototype"><span>03</span>体验原型<i aria-hidden="true">↗</i></a><a href="#requirements"><span>04</span>了解更多<i aria-hidden="true">↗</i></a></nav></details>
 </header>
 <main id="main">
 <section id="overview" class="site-hero site-wrap">
  <div class="hero-layout">
   <div class="site-hero-copy">
-   <span class="site-kicker"><i></i> 一个关于截图的产品设计探索</span>
-   <h1>想用的时候，<br><em>找得到。</em></h1>
-   <p class="hero-intro">临时要用的信息、生活灵感、需要留存的记录。<br>让存下的截图，有机会再次派上用场。</p>
-   <p class="hero-support">先看建议，由你确认。<br>再按自己的分类和记得的线索，找回那张图。</p>
-   <div class="site-actions"><a class="site-button filled" href="#prototype">体验交互原型 <span aria-hidden="true">↗</span></a><a class="site-inline-link" href="#people">看看设计思路 <span aria-hidden="true">↓</span></a></div>
-   <div class="hero-meta"><span>iPhone 用户方向</span><span>概念原型 V0.4</span></div>
+   <span class="site-kicker"><i></i> 拾序 · 截图整理与找回</span>
+   <h1>存过的截图，<br><em>需要时找得到。</em></h1>
+   <p class="hero-intro">按你的习惯分类，用记得的关键词查找。<br>从日常安排到生活灵感，让截图接着派上用场。</p>
+   <div class="site-actions"><a class="site-button filled" href="#prototype">体验原型 <span aria-hidden="true">↗</span></a><a class="site-inline-link" href="#people">了解产品优势 <span aria-hidden="true">↓</span></a></div>
+   <p class="hero-note">可操作的概念原型 · 无需注册即可体验</p>
   </div>
-  <div class="memory-board" role="img" aria-label="虚构界面示意：居家参考图、操作说明与日常安排，分类由用户确认">
-   <div class="board-top"><span>THE THINGS YOU SAVE</span><span>值得再次打开的收藏</span></div>
-   <div class="board-label"><span class="board-label-line"></span>一点线索，接着找。</div>
+  <div class="memory-board" role="img" aria-label="界面示意：从自定义的生活参考分类，用木色关键词找到居家参考截图。并非自动识别结果。">
+   <div class="board-top"><span>一点线索，接着找。</span><small>界面示意</small></div>
    <div class="memory-sheet sheet-back"></div>
    <div class="memory-sheet sheet-main">
-    <div class="sheet-heading"><span><i></i> 我的截图</span><small>界面示意</small></div>
-    <div class="sheet-tabs"><span class="selected">待确认</span><span>自己的分类</span><span class="sheet-plus">＋</span></div>
+    <div class="sheet-heading"><span><i></i> 我的截图</span><small>自己的分类</small></div>
+    <div class="sheet-tabs"><span>全部</span><span class="selected">生活参考</span><span>学习工作</span><span>＋</span></div>
+    <div class="sheet-search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span>木色</span><small>关键词</small></div>
     <div class="sheet-gallery">
-     <div class="sheet-tile"><img src="assets/life-reference.svg" width="360" height="440" alt=""><div><b>做决定前的参考</b><small>暖白 · 木色</small></div></div>
-     <div class="sheet-tile"><img src="assets/guide-note.svg" width="360" height="440" alt=""><div><b>照着操作的说明</b><small>步骤 · 设置</small></div></div>
+     <div class="sheet-tile"><img src="assets/life-reference.svg" width="360" height="440" alt=""><div><b>居家灵感</b><small>暖白 · 木色</small></div></div>
+     <div class="sheet-note"><span>生活参考</span><strong>留着参考，<br>下次接着用。</strong><div><i></i><i></i><i></i></div><small>按分类缩小范围<br>再用画面确认</small></div>
     </div>
-    <div class="sheet-bottom"><span class="sheet-dot"></span>先确认，再放进合适的分类<span>↗</span></div>
    </div>
-   <div class="memory-fragment"><span class="fragment-mark">“</span><p>存下的片段，<br>留给下次需要。</p><small>生活中的截图 · 虚构示意</small></div>
-   <div class="board-confirm"><span class="confirm-ring">✓</span><div><b>按你的习惯，整理。</b><small>建议可以修改，归类由你确认。</small></div></div>
-   <div class="board-footer"><span>COLLECT. FIND. USE.</span><small>画面与分类仅作设计示意</small></div>
+   <div class="board-confirm"><span class="confirm-ring">✓</span><div><b>分类，按你的习惯来。</b><small>可以自建，也可以随时调整。</small></div></div>
   </div>
  </div>
- <div class="hero-principles"><div><span>01</span><p><strong>分类适合自己</strong><small>支持自建、改名与调整</small></p></div><div><span>02</span><p><strong>建议先由你确认</strong><small>可修改，也可以稍后处理</small></p></div><div><span>03</span><p><strong>找到之后，再使用</strong><small>查看、分享，删留另行决定</small></p></div><a href="#people" aria-label="向下阅读设计思路">向下探索 <span>↓</span></a></div>
 </section>
-<section id="people" class="site-section site-wrap">
- <div class="section-index"><span>01 / THE STARTING POINT</span><span>围绕日常任务展开</span></div>
- <div class="story-layout">
-  <div><h2>截图存下了，<br>线索却散了。</h2><p class="section-intro">保存的时候，是为了以后用。<br>需要的时候，却只记得一点点。</p><div class="story-origin"><span class="origin-dot"></span><p>这组示例围绕日常安排、学习工作与生活参考展开：先按用途缩小范围，再通过画面和记得的线索确认目标。</p></div></div>
-  <div class="memory-prompts"><article><span class="prompt-symbol pink">↗</span><div><span class="prompt-type">日常安排</span><h3>出门前，找回预约或地址截图。</h3><p>核对时间、地点与准备事项，需要时再看一眼。</p></div><span class="prompt-arrow">↗</span></article><article><span class="prompt-symbol lavender">▤</span><div><span class="prompt-type">学习与工作</span><h3>要用时，找回资料或操作说明。</h3><p>按主题和用途，找到笔记、流程与工作信息。</p></div><span class="prompt-arrow">↗</span></article><article><span class="prompt-symbol sage">◇</span><div><span class="prompt-type">生活参考</span><h3>做决定时，翻出之前存的参考图。</h3><p>购物比较、居家灵感或日常搭配，接着参考。</p></div><span class="prompt-arrow">↗</span></article><p class="site-caption">以上为覆盖不同日常用途的虚构场景示例，不是固定分类要求；普遍需求与实际效果仍待验证。</p></div>
+
+<section id="people" class="site-section site-wrap benefits-section">
+ <div class="section-heading"><div><span class="section-label">产品优势</span><h2>找回有线索，<br class="mobile-break">整理有分寸。</h2></div><p>围绕找回、归类与清理，<br>把每一步做得清楚。</p></div>
+ <div class="benefit-grid">
+  <article class="benefit">
+   <div class="benefit-art category-art" role="img" aria-label="自定义分类示意：生活参考、学习工作、出行计划，同一张图可以有多个标签">
+    <div class="mini-label">我的分类</div><div class="category-cloud"><span><i>◇</i> 生活参考</span><span><i>▤</i> 学习工作</span><span><i>↗</i> 出行计划</span><span class="add-category">＋ 自建分类</span></div><div class="art-foot"><span class="mini-check">✓</span> 一张图，也能有多个分类</div>
+   </div>
+   <span class="benefit-number">01 / 按习惯整理</span><h3>分类，适合自己。</h3><p>自建、改名、合并分类。<br>收藏什么，由你定义。</p>
+  </article>
+  <article class="benefit">
+   <div class="benefit-art search-art" role="img" aria-label="文本查找示意：搜索设置，找到带有设置关键词的操作说明截图">
+    <div class="mini-search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span>设置</span><i></i></div><div class="mini-result"><img src="assets/guide-note.svg" width="48" height="62" alt=""><div><b>操作说明 · 三步设置</b><span>操作指南 <em>设置</em> 步骤</span></div><small>↗</small></div><div class="art-foot">分类缩小范围 · 关键词继续找</div>
+   </div>
+   <span class="benefit-number">02 / 沿线索找回</span><h3>记得一点，接着找。</h3><p>用分类和已填写的关键词筛选，<br>再看缩略图，确认想找的那张。</p>
+  </article>
+  <article class="benefit">
+   <div class="benefit-art confirm-art" role="img" aria-label="建议确认流程示意：检查建议、可以修改、确认后归类">
+    <div class="mini-review"><div><span>分类建议</span><small>待你确认</small></div><strong>出行与预约</strong><p>可以修改，也可以稍后处理</p><div class="mini-decision"><span>修改建议</span><span>✓ 确认归类</span></div></div>
+   </div>
+   <span class="benefit-number">03 / 每一步可确认</span><h3>归类与删留，你决定。</h3><p>先检查建议，再确认归类。<br>清理单独操作，用后再决定。</p>
+  </article>
  </div>
- <div class="design-statement"><span>设计取舍</span><p>每个人收藏的内容不同。<br><strong>分类，也应该留给自己定义。</strong></p><div>示例用途可以不同，分类可自定义。<br>同一张图，可以从多个分类找到。</div></div>
 </section>
-<section id="journey" class="flow-section">
+
+<section id="journey" class="scenes-section">
  <div class="site-wrap site-section">
-  <div class="section-index"><span>02 / FROM SAVED TO FOUND</span><span>把决定权留在手里</span></div>
-  <div class="site-section-head"><h2>一步一步，<br>让收藏重新有序。</h2><p>先检查，再归类。<br>找回和清理，各有清楚的入口。</p></div>
-  <div class="flow-steps"><article><span class="flow-number">01<small>IMPORT</small></span><h3>导入，先待确认</h3><p>图片先进入待确认。<br>此时也能从全部截图中查看。</p></article><article><span class="flow-number">02<small>REVIEW</small></span><h3>看看建议，随时修改</h3><p>检查图片、分类与线索。<br>不合适就改，不确定可稍后。</p></article><article><span class="flow-number">03<small>CONFIRM</small></span><h3>你确认，才归类</h3><p>逐张确认，或选几张一起预览。<br>正式分类由这一步生效。</p></article><article><span class="flow-number">04<small>FIND & USE</small></span><h3>找到，再拿来使用</h3><p>看清细节，再查看或分享。<br>用完后，另行决定是否清理。</p></article></div>
-  <div class="flow-footnote"><span>关于当前原型</span><p>示例建议由人工预设；自己的图片目前可手动归类。真实识别能力尚未接入。</p></div>
+  <div class="section-heading"><div><span class="section-label">使用场景</span><h2>存下来，是为了再用。</h2></div><p>安排、资料、参考图，<br>各有合适的查找入口。</p></div>
+  <div class="scene-grid">
+   <article><span class="scene-icon" aria-hidden="true">↗</span><span class="scene-type">日常安排</span><h3>出门前，找到预约。</h3><p>时间、地址、准备事项，一起核对。</p><span class="scene-path">出行与预约 <i>→</i> 预约截图</span></article>
+   <article><span class="scene-icon" aria-hidden="true">▤</span><span class="scene-type">学习工作</span><h3>要用时，翻出资料。</h3><p>按主题或关键词，继续之前的进度。</p><span class="scene-path">学习工作 <i>→</i> 项目资料</span></article>
+   <article><span class="scene-icon" aria-hidden="true">◇</span><span class="scene-type">生活参考</span><h3>做决定，再看灵感。</h3><p>购物、搭配、居家参考，留给下次用。</p><span class="scene-path">生活参考 <i>→</i> 居家灵感</span></article>
+  </div>
+  <p class="scene-caption">场景与分类仅为示例，你可以建立自己的分类。</p>
  </div>
 </section>
+
 <section id="prototype" class="live-section">
  <div class="site-wrap site-section">
-  <div class="section-index"><span>03 / MAKE IT TANGIBLE</span><span><i class="live-dot"></i> 可点击的概念原型</span></div>
-  <div class="site-section-head"><h2>把想法，<br>放到手里试一试。</h2><a href="原型.html" class="site-button light-outline">打开独立原型 <span aria-hidden="true">↗</span></a></div>
+  <div class="section-heading"><div><span class="section-label">体验原型</span><h2>从一张截图，试试看。</h2></div><a href="原型.html" class="site-button light-outline">打开独立原型 <span aria-hidden="true">↗</span></a></div>
   <div class="live-layout">
-   <div class="live-guide"><span class="guide-label">CHOOSE A STARTING POINT</span><h3>从一个小场景开始。</h3><p>用虚构示例走一遍流程，<br>也可以导入自己的图片。</p><ol><li><button data-guide="review"><span>01</span><div><strong>看看待确认建议</strong><small>16 张示例，确认前均未归类</small></div><i>↗</i></button></li><li><button data-guide="travel"><span>02</span><div><strong>检查一条出行建议</strong><small>核对地址用途，或补充查找线索</small></div><i>↗</i></button></li><li><button data-guide="steps"><span>03</span><div><strong>检查一份操作说明</strong><small>检查主题和步骤线索是否合适</small></div><i>↗</i></button></li><li><button data-guide="clean"><span>04</span><div><strong>体验用后清理</strong><small>保留、模拟删除与撤销</small></div><i>↗</i></button></li></ol><button class="reset-btn" id="reset-demo">↺ 重置本次体验</button></div>
-   <div class="phone-stage"><div class="phone"><div class="phone-status"><b>9:41</b><div class="island"></div><span aria-hidden="true">▥ ▰</span></div><div id="phone-app"></div><div class="home-indicator"></div></div><span class="device-caption">拾序 / APP CONCEPT</span></div>
-   <aside class="live-aside"><div class="aside-symbol">↳</div><h3>轻一点的界面，<br>清楚一点的决定。</h3><p>分类可以自定义。<br>建议可以修改。<br>不确定，可以先放一放。</p><div class="live-boundary"><span>体验前了解</span><p>个人图片仅在本页处理，不上传。当前无 AI 或 OCR；15 条示例建议为人工预设。</p><p>刷新会清空图片与草稿。模拟删除不会影响原图。</p></div></aside>
+   <div class="live-guide">
+    <h3>导入、确认、找到。<br>操作一遍，就明白。</h3>
+    <ol class="experience-steps"><li><span>1</span><div><strong>导入截图</strong><p>先放进待确认，留出检查的余地。</p></div></li><li><span>2</span><div><strong>检查并归类</strong><p>调整分类和线索，确认后才生效。</p></div></li><li><span>3</span><div><strong>查找与使用</strong><p>按分类或关键词找回，查看、分享。</p></div></li></ol>
+    <button class="site-button demo-start" data-guide="review">用示例开始 <span aria-hidden="true">→</span></button>
+    <details class="more-demos"><summary>更多体验 <span aria-hidden="true">＋</span></summary><div><button data-guide="travel">检查出行建议 <span>↗</span></button><button data-guide="steps">检查操作说明 <span>↗</span></button><button data-guide="clean">体验用后清理 <span>↗</span></button></div></details>
+    <button class="reset-btn" id="reset-demo">↺ 重置本次体验</button>
+   </div>
+   <div class="phone-stage"><div class="phone"><div class="phone-status"><b>9:41</b><div class="island"></div><span aria-hidden="true">▥ ▰</span></div><div id="phone-app"></div><div class="home-indicator"></div></div><span class="device-caption">可点击体验 · 也可导入自己的图片</span></div>
   </div>
+  <div class="prototype-note"><span>当前体验说明</span><p>示例建议为人工预设；个人图片可手动归类，尚未接入 AI / OCR。图片仅在本页处理，刷新后清空；清理为模拟操作，不影响原图。</p></div>
  </div>
 </section>
-<section id="requirements" class="site-section site-wrap requirements-section">
- <div class="section-index"><span>04 / THE DETAILS MATTER</span><span>从设计到具体需求</span></div>
- <div class="site-section-head"><h2>每个细节，<br>都有清楚的边界。</h2><a class="site-inline-link" href="需求文档.md" download>下载完整 PRD <span aria-hidden="true">↓</span></a></div>
- <div class="req-toolbar"><div class="segmented" role="group" aria-label="需求优先级筛选"><button data-req="all" class="selected" aria-pressed="true">全部需求</button><button data-req="P0" aria-pressed="false">P0 核心流程</button><button data-req="P1" aria-pressed="false">P1 后续增强</button></div><span>展开查看验收要点</span></div><div id="req-list" class="req-list"></div>
- <div class="detail-principles"><article><span>01 / CONTROL</span><h3>确认归类，才写入分类。</h3><p>取消不应用；稍后仍能找回。批量操作只影响明确选中的图片。</p></article><article><span>02 / ONE ORIGINAL</span><h3>入口可以重叠，图片只有一份。</h3><p>改名、合并与移除分类，都只调整标签。不会复制或删除原图。</p></article><article><span>03 / YOUR CHOICE</span><h3>分享和删留，分别决定。</h3><p>分享后图片仍保留。清理有独立入口，需要用户明确确认。</p></article></div>
- <div class="scope-line"><span>本轮范围之外</span><p>后台持续扫描、无人值守删除、跨设备同步、复杂笔记编辑与付费系统。</p></div>
+
+<section id="requirements" class="site-section site-wrap more-section">
+ <div class="section-heading"><div><span class="section-label">了解更多</span><h2>想看细节，展开了解。</h2></div><a class="site-inline-link" href="需求文档.md" download>下载完整需求文档 <span aria-hidden="true">↓</span></a></div>
+ <details class="info-fold"><summary><div><strong>产品需求与操作规则</strong><small>归类、查找、分享与清理的具体说明</small></div><span class="fold-icon" aria-hidden="true">＋</span></summary><div class="fold-body"><div class="req-toolbar"><div class="segmented" role="group" aria-label="需求优先级筛选"><button data-req="all" class="selected" aria-pressed="true">全部需求</button><button data-req="P0" aria-pressed="false">P0 核心流程</button><button data-req="P1" aria-pressed="false">P1 后续增强</button></div></div><div id="req-list" class="req-list"></div></div></details>
+ <section id="validation" aria-label="后续计划"><details class="info-fold"><summary><div><strong>下一步，走进真实使用</strong><small>本机保存、真实识别与用户验证</small></div><span class="fold-icon" aria-hidden="true">＋</span></summary><div class="fold-body roadmap"><article><span>01</span><div><h3>下次打开，还能继续</h3><p>优先推进图片、分类与草稿的本机保存。</p></div></article><article><span>02</span><div><h3>让自己的截图也有建议</h3><p>评估相册与识别接入，验证建议质量及修改成本。</p></div></article><article><span>03</span><div><h3>验证整个过程是否省事</h3><p>邀请截图较多的 iPhone 用户，对比整理与找回的总投入。</p></div></article><p class="roadmap-note">当前为概念原型，尚无效率或识别准确率的正式验证结果。</p></div></details></section>
 </section>
-<section id="validation" class="next-section">
- <div class="site-wrap site-section">
-  <div class="section-index"><span>05 / WHAT COMES NEXT</span><span>让设计经得起日常使用</span></div>
-  <div class="next-layout"><div><h2>好看的下一步，<br>是确实好用。</h2><p class="section-intro">目标是减少整理和找回的总负担。<br>这件事，需要通过真实使用来验证。</p><div class="next-note"><span>目前已明确</span><p>先面向 iPhone 用户。效率测试应邀请截图积压较多、实际遇到找图困难的人参与；少量示例先用于检查操作流程。</p></div><p class="site-caption">尚无速度改善、识别准确率或持续使用的正式结果。</p></div><div class="next-list"><article><span class="next-state">已完成</span><div><h3>可操作的建议确认原型</h3><p>自定义分类、修改建议、稍后、批量确认，以及查看与分享。</p></div><i>✓</i></article><article><span class="next-state upcoming">优先推进</span><div><h3>下次打开，还能继续用</h3><p>验证图片、分类与草稿的本机保存和恢复。</p></div><i>↗</i></article><article><span class="next-state upcoming">技术验证</span><div><h3>让自己的图片也有建议</h3><p>评估识别与相册接入；检查建议质量和纠错成本。</p></div><i>↗</i></article><article><span class="next-state upcoming">用户验证</span><div><h3>看整个过程，是否更省事</h3><p>把导入、阅读、修改、确认与找回的总投入纳入比较。</p></div><i>↗</i></article></div></div>
- </div>
-</section>
-<footer class="site-footer"><div class="site-wrap"><div class="footer-top"><div><span class="footer-kicker">A LITTLE MORE ORDER.</span><h2>把存过的，<br>重新用起来。</h2></div><a href="#prototype" class="site-button pale">再体验一下 <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><a href="#overview" class="footer-brand"><img src="assets/mark.svg?v=20261027-purple" width="30" height="30" alt="">拾序</a><p>产品设计探索 · V0.4 视觉优化版<br>2026.10.27 / 效果待真实使用验证</p><a href="需求文档.md" download>完整需求文档 ↓</a><a href="#overview">回到顶部 ↑</a></div></div></footer>
+<footer class="site-footer"><div class="site-wrap"><div class="footer-top"><div><span>截图留得住，也用得上。</span><h2>让存过的，重新有用。</h2></div><a href="原型.html" class="site-button filled">体验拾序 <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><a href="#overview" class="footer-brand"><img src="assets/mark.svg?v=20261027-purple" width="28" height="28" alt="">拾序</a><p>iPhone 产品方向 · 概念原型 V0.4</p><a href="#overview">回到顶部 ↑</a></div></div></footer>
 </main>
 <div id="modal" class="modal" hidden><div class="modal-backdrop"></div><section class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" tabindex="-1"><button class="dialog-close" aria-label="关闭弹窗">×</button><div id="dialog-content"></div></section></div><div id="toast" role="status" class="toast"></div>
 </body>
